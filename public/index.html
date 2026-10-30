@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Padeladict AI — Coach & Gear Advisor 🎾</title>
+  <!-- Modern athletic typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Ambient sport glow effect -->
+  <div class="ambient-glow glow-top"></div>
+  <div class="ambient-glow glow-bottom"></div>
+
+  <main class="app-layout">
+    <!-- Chat Card Container -->
+    <section class="chat-card">
+      
+      <!-- Header -->
+      <header class="chat-header">
+        <div class="coach-profile">
+          <div class="avatar-ring">
+            <span class="avatar-icon">🎾</span>
+            <span class="status-pulse" title="Ready on court"></span>
+          </div>
+          <div class="coach-meta">
+            <div class="coach-title-row">
+              <h2>Coach Padeladict</h2>
+              <span class="sport-badge">PADEL PRO</span>
+            </div>
+            <p class="coach-status">
+              <span class="status-dot"></span> Ready on Court • Ayo Bakar Kalori! 🔥
+            </p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button type="button" id="reset-btn" class="icon-btn" title="Mulai Sesi Baru" aria-label="Reset percakapan">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.5 2v6h-6M2.5 22v-6h6M2 11.5a10 10 0 0 1 18.8-4.3M22 12.5a10 10 0 0 1-18.8 4.2"/>
+            </svg>
+            <span>Reset</span>
+          </button>
+        </div>
+      </header>
+
+      <!-- Motivational Micro Banner -->
+      <div class="motivation-banner">
+        <span class="fire-icon">⚡</span>
+        <span class="banner-text"><strong>Game On!</strong> Tingkatkan skill, pilih raket terbaik, dan kuasai lapangan.</span>
+      </div>
+
+      <!-- Chat Box -->
+      <div id="chat-box" class="chat-box" role="log" aria-live="polite"></div>
+
+      <!-- Quick Interactive Suggestions Chips -->
+      <div class="quick-chips-wrapper">
+        <span class="chips-label">🎯 Pilihan Cepat:</span>
+        <div class="chips-scroller" id="quick-chips">
+          <button type="button" class="chip-btn" data-prompt="Rekomendasikan raket padel terbaik untuk pemain pemula dengan budget hemat!">
+            🎾 Raket Pemula
+          </button>
+          <button type="button" class="chip-btn" data-prompt="Bagaimana tips melakukan pukulan Bandeja dan Vibora yang efektif?">
+            🔥 Tips Bandeja & Vibora
+          </button>
+          <button type="button" class="chip-btn" data-prompt="Berikan menu latihan footwork & kelincahan di lapangan padel!">
+            ⚡ Drill Footwork
+          </button>
+          <button type="button" class="chip-btn" data-prompt="Apa rutinitas pemanasan 10 menit sebelum bertanding padel?">
+            🏃 Pemanasan 10 Menit
+          </button>
+        </div>
+      </div>
+
+      <!-- Input Form -->
+      <footer class="chat-footer">
+        <form id="chat-form" class="chat-form">
+          <div class="input-wrapper">
+            <span class="input-icon">💬</span>
+            <input 
+              type="text" 
+              id="user-input" 
+              placeholder="Tanya raket, teknik, atau drill latihan..." 
+              autocomplete="off" 
+              required 
+              maxlength="500"
+            />
+          </div>
+          <button type="submit" id="submit-btn" class="send-button">
+            <span>Kirim</span>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="2" x2="11" y2="13"></line>
+              <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+            </svg>
+          </button>
+        </form>
+        <p class="footer-note">🎾 <em>Stay active & warm up before every match!</em></p>
+      </footer>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
